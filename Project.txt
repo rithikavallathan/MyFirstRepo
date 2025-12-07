@@ -1,0 +1,18 @@
+import random
+import string
+
+def generate_password(length=12):
+    characters = string.ascii_letters + string.digits + string.punctuation
+    password = ''.join(random.choice(characters) for _ in range(length))
+    return password
+
+if __name__ == "__main__":
+    print("Random Password Generator ")
+    user_length = input("Enter password length (Press enter for default 12): ")
+
+    if user_length.isdigit():
+        password = generate_password(int(user_length))
+    else:
+        password = generate_password()
+
+    print(f"Generated Password: {password}")
