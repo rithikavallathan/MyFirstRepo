@@ -25,7 +25,9 @@ Just make sure you have **Python 3.6+** installed.
 
 ##  How to Run
 
-1. Clone this repository:
 
 ```bash
 git clone https://github.com/your-username/password-generator.git
+cd password-generator
+python password_generator.py
+
